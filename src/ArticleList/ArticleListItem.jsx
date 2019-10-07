@@ -1,9 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
+import SlugButton from './SlugButton.jsx'
+import './ArticleListItem.module.css'
 
 const ArticleListItem = props => (
     <div>
+        <html lang="en">
         <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,15 +13,16 @@ const ArticleListItem = props => (
         <title>Many Articles</title>
         </head>
         <body>
+            <section>
             <header>
             <h1>{props.article.title}</h1>
             </header>
             <p>{props.article.shortText}</p>
             <time dateTime={props.article.pubYear}>{props.article.pubDate}</time>
-            <button onClick={() => alert(props.article.slug)}>
-                {"show article slug"}
-            </button> 
+            {<SlugButton article = {props.article}/>} 
+            </section>
         </body>
+        </html>
     </div> 
 );
  

@@ -1,0 +1,14 @@
+ul {
+    background: gray;
+    border: 1px gray;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+li {
+    list-style-type: none;
+    padding: 1rem;
+}
+
+
+
