@@ -1,7 +1,7 @@
 time {
     font-weight: bold;
 }
-header {
+h1 {
     color: crimson;
     font-size: 20px;
     padding: 0;
@@ -16,5 +16,6 @@ html {
 }
 section {
     border: 1px solid crimson;
-    padding: 1rem;
+    padding: 0.5rem 10rem;
+    background-image: linear-gradient(to right, crimson, white 5%);
 }
