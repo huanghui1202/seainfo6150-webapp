@@ -1,14 +1,27 @@
 ul {
-    background: gray;
+    background: SILVER;
     border: 1px gray;
     margin: 1rem;
     padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-radius: 5px;
+    gap: 30px;
+
 }
 
 li {
     list-style-type: none;
-    padding: 1rem;
+    margin: 10px;
+    border: 1px solid crimson;
+    padding: 2rem;
+    background-image: linear-gradient(to right, crimson, white 15%);
+    border-radius: 5px;
+    box-shadow: 1px 8px 8px 1px gray;
 }
+
+
+
 
 
 

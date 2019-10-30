@@ -1,11 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import SlugButton from './SlugButton.jsx'
-import './ArticleListItem.module.css'
+import design from './ArticleListItem.module.css'
 import ArticleImage from './ArticleImage'
 
 const ArticleListItem = props => (
-    <div>
+    <div className = {design.parent}>
         <html lang="en">
         <head>
         <meta charset="UTF-8" />
@@ -14,13 +14,13 @@ const ArticleListItem = props => (
         <title>Many Articles</title>
         </head>
         <body>
-        {<ArticleImage article = {props.article}/>}
-            <section>
-            <h1>{props.article.title}</h1>
-            <p>{props.article.shortText}</p>
-            <time dateTime={props.article.pubYear}>{props.article.pubDate}</time>
+        <section className = {design.container}>
+            {<ArticleImage article = {props.article}/>}
+                <h1>{props.article.title}</h1>
+                <p>{props.article.shortText}</p>
+                <time dateTime={props.article.pubYear}>{props.article.pubDate}</time>
             {<SlugButton article = {props.article}/>} 
-            </section>
+        </section>
         </body>
         </html>
     </div> 
